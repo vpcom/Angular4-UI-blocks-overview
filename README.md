@@ -2,7 +2,7 @@
 
 ## tldr
 
-To experience the use of directives, this application aims at building a customizable card composed with several elements.
+To experience the use of nested components, this application aims at building a customizable card composed with several paramterized innerelements.
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.8.
@@ -23,5 +23,5 @@ And navigate to `http://localhost:4200/`. The app will automatically reload if y
 
 - Only one page is necessary
 - Build one component, and then a set of components based on data providing a list of parameters.
-- Build directives from outside to inside, from simple to complex.
-- Some innerelements are a collection of items. Let's collect statistics about how many times they are clicked and display it in another directive.
+- Build components from outside to inside, from simple to complex.
+- Some elements trigger actions. Nothing special to do here.
