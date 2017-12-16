@@ -1,0 +1,17 @@
+.app-card {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+
+    display: flex;
+}
+
+.app-card-head {
+
+}
+.app-card-image {
+}
+
+.app-card-text {
+    align-content: flex-start;
+}
