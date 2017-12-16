@@ -1,19 +1,27 @@
 <div class="app-card">
+  <div class="app-card-content">
     <div class="app-card-head">
-    Title: {{this.title}}<br />
-    <br />
-    Date/time: {{this.date}} - {{this.time}}<br />
-    Place: {{this.place}}
-  </div>
+      <div class="app-card-info">
+        Title: {{this.title}}<br />
+        <br />
+        Date/time: {{this.date}} - {{this.time}}<br />
+        Place: {{this.place}}
+      </div>
 
-  <div class="app-card-image">
-      <img src="{{this.image}}" />
+      <div class="app-card-image">
+        <img src="{{this.image}}" />
+      </div>
+    </div>
+    <div class="app-card-text">
+      Text: {{this.text}}
+    </div>
   </div>
-  <div class="app-card-text">
-    Text: {{this.text}}
-  </div>
-  <div class="app-card-image">
-    Id: {{this.id}}<br />
-    {{this.share}}
+  <div class="app-card-action">
+    <div class="app-card-fav">
+      Id: {{this.id}}
+    </div>
+    <div class="app-card-share">
+      {{this.share}}
+    </div>
   </div>
 </div>

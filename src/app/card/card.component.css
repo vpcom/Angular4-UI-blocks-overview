@@ -6,12 +6,28 @@
     display: flex;
 }
 
+.app-card-content {
+}
 .app-card-head {
-
+    display: flex;
+}
+.app-card-info {
+    padding: 5px;
 }
 .app-card-image {
 }
 
 .app-card-text {
-    align-content: flex-start;
+    padding: 5px;
+}
+
+.app-card-action {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.app-card-fav {
+}
+.app-card-share {
 }
