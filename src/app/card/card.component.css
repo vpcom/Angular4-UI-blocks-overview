@@ -1,13 +1,13 @@
 .app-card {
     border: 1px solid black;
     border-radius: 5px;
-    padding: 10px;
 
     display: flex;
 }
 
 .app-card-head {
     display: flex;
+    justify-content: space-between;
 }
 .app-card-info {
     padding: 5px;

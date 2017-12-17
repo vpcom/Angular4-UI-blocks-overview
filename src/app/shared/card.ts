@@ -9,4 +9,6 @@ export class Card {
   place: string;
   image: string;
   shareCollection: ShareItem[];
+  mainColor: string;
+  secondaryColor: string;
 }

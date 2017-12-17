@@ -29,6 +29,8 @@ export class AppComponent {
     place: 'Earth',
     image: '../assets/space-invader-press-start.jpg',
     shareCollection: this.shareCollection,
+    mainColor: '#64DD17',
+    secondaryColor: '#CCFF90',
   }
 
   isFav : boolean = false;
