@@ -2,22 +2,22 @@
   <div class="app-card-content">
     <div class="app-card-head">
       <div class="app-card-info">
-        Title: {{this.title}}<br />
+        Title: {{this.card.title}}<br />
         <br />
-        Date/time: {{this.date}} - {{this.time}}<br />
-        Place: {{this.place}}
+        Date/time: {{this.card.date}} - {{this.card.time}}<br />
+        Place: {{this.card.place}}
       </div>
       <div class="app-card-image">
-        <img src="{{this.image}}" with="50%" />
+        <img src="{{this.card.image}}" with="50%" />
       </div>
     </div>
     <div class="app-card-text">
-      Text: {{this.text}}
+      Text: {{this.card.text}}
     </div>
   </div>
   <app-card-action
-    [id]="id" 
-    [share]="share" 
+    [id]="card.id" 
+    [share]="card.share" 
     (transmitFavEvent2)="emitFavEvent3($event)"
   ></app-card-action>
 </div>

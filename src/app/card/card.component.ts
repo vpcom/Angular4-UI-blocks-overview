@@ -1,5 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
+import { Card } from '../shared/card';
+
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
@@ -7,14 +9,17 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class CardComponent implements OnInit {
 
-  @Input() id: number = -1;
-  @Input() title: string = '';
-  @Input() text: string = '';
-  @Input() date: string = '';
-  @Input() time: string = '';
-  @Input() place: string = '';
-  @Input() image: string = '';
-  @Input() share: string = '';
+  // @Input() id: number = -1;
+  // @Input() title: string = '';
+  // @Input() text: string = '';
+  // @Input() date: string = '';
+  // @Input() time: string = '';
+  // @Input() place: string = '';
+  // @Input() image: string = '';
+  // @Input() share: string = '';
+
+  @Input() card: Card = null;
+
 
   @Output() transmitFavEvent3 : EventEmitter<number> = new EventEmitter<number>();
 
@@ -24,6 +29,6 @@ export class CardComponent implements OnInit {
   }
 
   emitFavEvent3(event) {
-    this.transmitFavEvent3.emit(this.id);
+    this.transmitFavEvent3.emit(this.card.id);
   }
 }

@@ -5,13 +5,17 @@ import { AppComponent } from './app.component';
 import { CardComponent } from './card/card.component';
 import { CardActionComponent } from './card-action/card-action.component';
 import { CardFavComponent } from './card-fav/card-fav.component';
+import { CardShareCollectionComponent } from './card-share-collection/card-share-collection.component';
+import { CardShareComponent } from './card-share/card-share.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CardComponent,
     CardActionComponent,
-    CardFavComponent
+    CardFavComponent,
+    CardShareCollectionComponent,
+    CardShareComponent
   ],
   imports: [
     BrowserModule

@@ -5,14 +5,17 @@
   </h1>
 </div>
 <app-card
-    [id]="cardId" 
-    [title]="cardTitle" 
-    [text]="cardText" 
-    [date]="cardDate" 
-    [time]="cardTime" 
-    [place]="cardPlace" 
-    [image]="cardImage" 
-    [share]="cardShare" 
+    [card]="aCard"
     (transmitFavEvent3)="recordFav($event)"
 ></app-card>
-<div *ngIf="isFav">The card id {{this.cardId}} is a favorite</div>
+<div *ngIf="isFav">The card id {{this.aCard.id}} is a favorite</div>
+
+
+<!-- [id]="cardId" 
+[title]="cardTitle" 
+[text]="cardText" 
+[date]="cardDate" 
+[time]="cardTime" 
+[place]="cardPlace" 
+[image]="cardImage" 
+[share]="cardShare"  -->
