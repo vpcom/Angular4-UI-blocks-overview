@@ -21,5 +21,5 @@ And navigate to `http://localhost:4200/`. The app will automatically reload if y
 
 ## todo
 
-- Add more components if there is time.
-- Some elements trigger actions. Nothing special to do here.
+- Collection of share components.
+- Service giving a collection of parameters to create several cards.

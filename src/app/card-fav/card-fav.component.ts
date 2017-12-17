@@ -16,7 +16,6 @@ export class CardFavComponent implements OnInit {
   }
 
   setFav(event) {
-    console.log(event);
     event.target.innerText === 'favorite_border' ? event.target.innerText = 'favorite'
                                                  : event.target.innerText = 'favorite_border';
     this.transmitFavEvent.emit(this.id);
