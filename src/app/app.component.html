@@ -7,15 +7,7 @@
 <app-card
     [card]="aCard"
     (transmitFavEvent3)="recordFav($event)"
+    (transmitShareEvent3)="recordShare($event)"
 ></app-card>
 <div *ngIf="isFav">The card id {{this.aCard.id}} is a favorite</div>
-
-
-<!-- [id]="cardId" 
-[title]="cardTitle" 
-[text]="cardText" 
-[date]="cardDate" 
-[time]="cardTime" 
-[place]="cardPlace" 
-[image]="cardImage" 
-[share]="cardShare"  -->
+{{this.socialShare | json}}

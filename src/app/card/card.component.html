@@ -17,7 +17,8 @@
   </div>
   <app-card-action
     [id]="card.id" 
-    [share]="card.share" 
+    [shareCollection]="card.shareCollection" 
     (transmitFavEvent2)="emitFavEvent3($event)"
+    (transmitShareEvent2)="emitShareEvent3($event)"
   ></app-card-action>
 </div>

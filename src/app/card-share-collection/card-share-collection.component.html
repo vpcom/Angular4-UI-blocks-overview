@@ -1,5 +1,6 @@
 
-<app-card-share
+<app-card-share *ngFor="let shareItem of shareCollection"
     [id]="id"
-    [share]="share"
+    [shareItem]="shareItem"
+    (transmitShareEvent)="emitShareEvent($event)"
 ></app-card-share>

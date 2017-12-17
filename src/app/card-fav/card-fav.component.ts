@@ -1,5 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
+import { ShareItem } from '../shared/share-item';
+
 @Component({
   selector: 'app-card-fav',
   templateUrl: './card-fav.component.html',

@@ -5,6 +5,7 @@
   ></app-card-fav>
   <app-card-share-collection
       [id]="id"
-      [share]="share"
+      [shareCollection]="shareCollection"
+      (transmitShareEvent2)="emitShareEvent2($event)"
   ></app-card-share-collection>
 </div>

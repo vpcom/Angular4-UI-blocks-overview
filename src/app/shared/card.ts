@@ -1,3 +1,5 @@
+import { ShareItem } from './share-item';
+
 export class Card {
   id: number;
   title: string;
@@ -6,5 +8,5 @@ export class Card {
   time: string;
   place: string;
   image: string;
-  share: string;
+  shareCollection: ShareItem[];
 }

@@ -9,19 +9,10 @@ import { Card } from '../shared/card';
 })
 export class CardComponent implements OnInit {
 
-  // @Input() id: number = -1;
-  // @Input() title: string = '';
-  // @Input() text: string = '';
-  // @Input() date: string = '';
-  // @Input() time: string = '';
-  // @Input() place: string = '';
-  // @Input() image: string = '';
-  // @Input() share: string = '';
-
   @Input() card: Card = null;
 
-
   @Output() transmitFavEvent3 : EventEmitter<number> = new EventEmitter<number>();
+  @Output() transmitShareEvent3 : EventEmitter<string> = new EventEmitter<string>();
 
   constructor() { }
 
@@ -29,6 +20,9 @@ export class CardComponent implements OnInit {
   }
 
   emitFavEvent3(event) {
-    this.transmitFavEvent3.emit(this.card.id);
+    this.transmitFavEvent3.emit(event);
+  }
+  emitShareEvent3(event) {
+    this.transmitShareEvent3.emit(event);
   }
 }

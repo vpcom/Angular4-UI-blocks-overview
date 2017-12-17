@@ -1,4 +1,6 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+
+import { ShareItem } from '../shared/share-item';
 
 @Component({
   selector: 'app-card-share',
@@ -7,11 +9,17 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class CardShareComponent implements OnInit {
 
-  @Input() share: string = '';
+  @Input() shareItem: ShareItem = null;
+  @Output() transmitShareEvent : EventEmitter<string> = new EventEmitter<string>();
   
   constructor() { }
 
   ngOnInit() {
+    console.log(this.shareItem);
   }
 
+  shareInfo() {
+    console.log(this.shareItem.name);
+    this.transmitShareEvent.emit(this.shareItem.name);
+  }
 }
