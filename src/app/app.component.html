@@ -13,4 +13,6 @@
     [place]="cardPlace" 
     [image]="cardImage" 
     [share]="cardShare" 
+    (transmitFavEvent3)="recordFav($event)"
 ></app-card>
+<div *ngIf="isFav">The card id {{this.cardId}} is a favorite</div>

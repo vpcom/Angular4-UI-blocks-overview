@@ -1,7 +1,7 @@
 <div class="app-card-action">
   <app-card-fav
       [id]="id"
-      (change)="setFav($event)"
+      (transmitFavEvent)="emitFavEvent2($event)"
   ></app-card-fav>
   <div class="app-card-share">
     {{this.share}}

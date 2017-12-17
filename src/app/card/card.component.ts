@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-card',
@@ -16,9 +16,14 @@ export class CardComponent implements OnInit {
   @Input() image: string = '';
   @Input() share: string = '';
 
+  @Output() transmitFavEvent3 : EventEmitter<number> = new EventEmitter<number>();
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  emitFavEvent3(event) {
+    this.transmitFavEvent3.emit(this.id);
+  }
 }

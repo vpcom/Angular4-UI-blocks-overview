@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -16,4 +16,11 @@ export class AppComponent {
   cardPlace: string = 'Earth';
   cardImage: string = '../assets/space-invader-press-start.jpg';
   cardShare: string = 'complex collection of object coming soon....';
+
+  isFav : boolean = false;
+
+  recordFav(cardId) {
+    this.isFav = !this.isFav;
+  }
+
 }
