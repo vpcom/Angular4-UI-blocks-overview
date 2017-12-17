@@ -19,7 +19,6 @@ export class CardShareCollectionComponent implements OnInit {
   }
 
   emitShareEvent(event) {
-    console.log(event);
     this.transmitShareEvent2.emit(event);
   }
 

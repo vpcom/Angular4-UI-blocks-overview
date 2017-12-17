@@ -1,4 +1,6 @@
-import { Component, Output, EventEmitter, Pipe, PipeTransform } from '@angular/core';
+import { Component, Output, EventEmitter, OnInit } from '@angular/core';
+
+import { CardsService } from './cards.service';
 
 import { Card } from './shared/card';
 import { ShareItem } from './shared/share-item';
@@ -8,37 +10,26 @@ import { ShareItem } from './shared/share-item';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'Angular4 UI blocks overview';
+
+  cardsPromise: Promise<Card[]>;
   
-  aShareItem : ShareItem = {
-    id: 0,
-    name: 'facebook',
-    imageSrc: '../assets/facebook.png',
-    shareLink: 'fakelink.com',
-  }
-
-  shareCollection : ShareItem[] = [ this.aShareItem ];
-
-  aCard : Card = {
-    id: 0,
-    title: 'A space invader',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum imperdiet ante, quis euismod quam vestibulum non. Curabitur accumsan, lacus sit amet finibus tempus, quam nunc consectetur sapien, eu vulputate eros dolor sit amet leo. Suspendisse fermentum libero fermentum mi aliquet ullamcorper.',
-    date: '01.01.2000',
-    time: '12:00',
-    place: 'Earth',
-    image: '../assets/space-invader-press-start.jpg',
-    shareCollection: this.shareCollection,
-    mainColor: '#64DD17',
-    secondaryColor: '#CCFF90',
-  }
-
-  isFav : boolean = false;
-  isShared : boolean = false;
+  favCollection : Object = {};
   socialShare : Object = {};
 
+  constructor( private cardsService: CardsService ) { }
+
+  ngOnInit() {
+    this.cardsPromise = this.cardsService.getCards();
+  }
+
   recordFav(cardId) {
-    this.isFav = !this.isFav;
+    if (cardId in this.favCollection) {
+      this.favCollection[cardId] = !this.favCollection[cardId];
+    } else {
+      this.favCollection[cardId] = true;
+    }
   }
   recordShare(shareName) {
     if (shareName in this.socialShare) {

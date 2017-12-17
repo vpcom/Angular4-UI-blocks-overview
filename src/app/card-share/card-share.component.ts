@@ -15,11 +15,9 @@ export class CardShareComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.shareItem);
   }
 
   shareInfo() {
-    console.log(this.shareItem.name);
     this.transmitShareEvent.emit(this.shareItem.name);
   }
 }

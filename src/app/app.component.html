@@ -4,10 +4,11 @@
     Welcome to {{title}}!
   </h1>
 </div>
-<app-card
-    [card]="aCard"
+<app-card *ngFor="let card of cardsPromise | async"
+    [card]="card"
     (transmitFavEvent3)="recordFav($event)"
     (transmitShareEvent3)="recordShare($event)"
 ></app-card>
-<div *ngIf="isFav">The card id {{this.aCard.id}} is a favorite</div>
+
+{{this.favCollection | json}}<br />
 {{this.socialShare | json}}

@@ -1,6 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { HttpModule } from '@angular/http';
+
+import { CardsService } from './cards.service';
+
 import { AppComponent } from './app.component';
 import { CardComponent } from './card/card.component';
 import { CardActionComponent } from './card-action/card-action.component';
@@ -18,9 +22,10 @@ import { CardShareComponent } from './card-share/card-share.component';
     CardShareComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpModule
   ],
-  providers: [],
+  providers: [CardsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

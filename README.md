@@ -19,7 +19,3 @@ Run `npm install` for setting up the project.
 
 And navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## todo
-
-- Collection of share components.
-- Service giving a collection of parameters to create several cards.

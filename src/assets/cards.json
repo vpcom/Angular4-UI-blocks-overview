@@ -1,0 +1,88 @@
+{"data": [
+    {
+        "id": 0,
+        "title": "A space invader",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum imperdiet ante, quis euismod quam vestibulum non. Curabitur accumsan, lacus sit amet finibus tempus, quam nunc consectetur sapien, eu vulputate eros dolor sit amet leo. Suspendisse fermentum libero fermentum mi aliquet ullamcorper.",
+        "date": "01.01.2000",
+        "time": "12:00",
+        "place": "Earth",
+        "image": "../assets/space-invader-press-start.jpg",
+        "shareCollection": [
+            {
+                "id": 0,
+                "name": "facebook",
+                "imageSrc": "../assets/facebook.png",
+                "shareLink": "fakelink.com"
+            },
+            {
+                "id": 1,
+                "name": "twitter",
+                "imageSrc": "../assets/twitter.png",
+                "shareLink": "fakelink.com"
+            },
+            {
+                "id": 2,
+                "name": "Instagram",
+                "imageSrc": "../assets/instagram.png",
+                "shareLink": "fakelink.com"
+            },
+            {
+                "id": 3,
+                "name": "Pinterest",
+                "imageSrc": "../assets/pinterest.png",
+                "shareLink": "fakelink.com"
+            },
+            {
+                "id": 4,
+                "name": "e-mail",
+                "imageSrc": "../assets/email.png",
+                "shareLink": "fakelink.com"
+            }
+        ],
+        "mainColor": "#64DD17",
+        "secondaryColor": "#CCFF90"
+    },
+    {
+        "id": 1,
+        "title": "The Space Invaders game",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur elementum nisi mauris, at accumsan dui tincidunt quis. Nullam ac justo a lorem interdum volutpat. Fusce lobortis consequat vulputate.",
+        "date": "10.10.2010",
+        "time": "16:00",
+        "place": "Moon",
+        "image": "../assets/space-invaders-game.png",
+        "shareCollection": [
+            {
+                "id": 0,
+                "name": "facebook",
+                "imageSrc": "../assets/facebook.png",
+                "shareLink": "fakelink.com"
+            },
+            {
+                "id": 1,
+                "name": "twitter",
+                "imageSrc": "../assets/twitter.png",
+                "shareLink": "fakelink.com"
+            },
+            {
+                "id": 2,
+                "name": "Instagram",
+                "imageSrc": "../assets/instagram.png",
+                "shareLink": "fakelink.com"
+            },
+            {
+                "id": 3,
+                "name": "Pinterest",
+                "imageSrc": "../assets/pinterest.png",
+                "shareLink": "fakelink.com"
+            },
+            {
+                "id": 4,
+                "name": "e-mail",
+                "imageSrc": "../assets/email.png",
+                "shareLink": "fakelink.com"
+            }
+        ],
+        "mainColor": "#FF6D00",
+        "secondaryColor": "#FFAB40"
+    }
+]}
