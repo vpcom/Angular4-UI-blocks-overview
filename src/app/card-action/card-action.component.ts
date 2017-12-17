@@ -15,4 +15,8 @@ export class CardActionComponent implements OnInit {
   ngOnInit() {
   }
 
+  setFav(event) {
+    console.log("parent");
+    console.log(event);
+  }
 }
