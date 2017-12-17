@@ -21,7 +21,5 @@ And navigate to `http://localhost:4200/`. The app will automatically reload if y
 
 ## todo
 
-- Only one page is necessary
-- Build one component, and then a set of components based on data providing a list of parameters.
-- Build components from outside to inside, from simple to complex.
+- Add more components if there is time.
 - Some elements trigger actions. Nothing special to do here.
