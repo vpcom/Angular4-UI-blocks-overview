@@ -6,8 +6,6 @@
     display: flex;
 }
 
-.app-card-content {
-}
 .app-card-head {
     display: flex;
 }
@@ -26,13 +24,6 @@
     padding: 5px;
 }
 
-.app-card-action {
-    padding: 5px;
+app-card-action {
     display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-}
-.app-card-fav {
-}
-.app-card-share {
 }

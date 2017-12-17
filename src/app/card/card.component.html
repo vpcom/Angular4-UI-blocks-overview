@@ -16,12 +16,18 @@
       Text: {{this.text}}
     </div>
   </div>
-  <div class="app-card-action">
+  <app-card-action
+    [id]="id" 
+    [share]="share" 
+  ></app-card-action>
+
+  <!-- <div class="app-card-action">
     <div class="app-card-fav">
       Id: {{this.id}}
     </div>
     <div class="app-card-share">
       {{this.share}}
     </div>
-  </div>
+  </div> -->
+  
 </div>
